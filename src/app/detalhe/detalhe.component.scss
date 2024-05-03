@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ocupa 100% da altura da tela */
+  }
+  
+  .section1 {
+      flex: 3; 
+      text-align: center;
+  }
+
+  .card-img-top{
+    width: 20rem;
+  }
+
+  .textos {
+    display: flex;
+    justify-content: space-evenly;
+    color: #000000ab;
+  }
+
+  h6 {
+    margin-top: 1%;
+  }
+  
+  .section2 {
+    flex: 2;
+  }
+  
+  .section3 {
+    background-color: green;
+    flex: 3;
+  }
+
+  .section4 {
+    background-color: pink;
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }

@@ -1,0 +1,261 @@
+/* Padrão */
+.red {
+    background-color: #ff0000;
+  }
+  
+  .yellow {
+    background-color: #ffff00;
+  }
+  
+  .green {
+    background-color: #008000;
+  }
+  
+  /* Todos da Pokedex 1 */
+  .all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .pokedex1 {
+    background-color: #dc143c;
+    box-shadow: -5px -5px #8b0000;
+    border-radius: 7px;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cabeçalho Pokedex1 */
+  .cabecalho {
+    display: flex;
+  }
+  
+  .ballPeqAll {
+    flex-grow: 1;
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .ballPrincipal {
+    background: #0000ff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+  }
+  
+  .ballPequena {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
+  }
+  
+  /* Corpo Pokedex1 */
+  .corpo {
+    background-color: #dc143c;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quadradoPrincipal {
+    background-color: #dcdcdc;
+    width: 75%;
+    height: 90%;
+    margin-top: 12%;
+  }
+  
+  .quadradoImagemAll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .quadradoImagemOnly {
+    background-color: #fff;
+    width: 80%;
+    height: 70%;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  
+  .imgPokemon {
+    /* margin-left: 20px;
+    margin-top: 15px; */
+  }
+  
+  .rotapeImg {
+    display: flex;
+  }
+  
+  .ballRed {
+    background-color: #ff0000;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: 14%;
+    margin-right: 8%;
+  }
+  
+  .namePokemon {
+    margin-top: 10%;
+    font-size: xx-large;
+  }
+  
+  .stripe {
+    padding: 14% 0 11% 8%;
+    transform: scale(2);
+    margin-left: 5px;
+  }
+  
+  .striped1,
+  .striped2,
+  .striped3 {
+    width: 30%;
+    margin-top: 5px;
+    border-bottom: 3px solid #000;
+  }
+  
+  /* Ratape Pokedex1 */
+  
+  .rotape {
+    height: 120px;
+  }
+  
+  .duasDiv {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .divYellow {
+    background-color: #ffff00;
+    width: 18%;
+    height: 90%;
+    margin-top: 4%;
+    margin-left: 0px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .divBlue {
+    background-color: #1e90ff;
+    width: 18%;
+    height: 90%;
+    margin-top: 4%;
+    margin-left: 10%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .pesquisa {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+  }
+  
+  .buttonPsq {
+    background: #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .buttonPsq label {
+    margin: 25% 14%;
+    color: #fff;
+  }
+  
+  .inputPsq {
+    margin-top: 3%;
+  }
+  
+  .inputPsq input {
+    border-radius: 7px;
+    background: #dcdcdc;
+    border: none;
+    padding: 0px 15px;
+  }
+  
+  .btnSearch {
+    background-color: #000;
+  }
+  
+  /* .pokedexDivisao {
+    background-color: #000;
+    width: 1px;
+    height: 1px;
+  } */
+  
+  /* Cabeçalho Pokedex2 */
+  .pokedex2 {
+    background-color: #dc143c;
+    box-shadow: -5px -5px #8b0000;
+    border-radius: 7px;
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Moves Pokedex2 */
+  
+  .moves {
+    background-color: #696969;
+    width: 70%;
+    height: 25%;
+    border-radius: 7px;
+  }
+  
+  /* Abilities Pokedex2 */
+  
+  .abilities {
+    background-color: #1e90ff;
+    width: 70%;
+    height: 15%;
+    border-radius: 7px;
+  }
+  
+  /* Egg Group Pokedex2 */
+  
+  .eggGroup {
+    display: flex;
+    justify-content: center;
+    padding: 10% 45%;
+  }
+  
+  .eggQuadrado {
+    background-color: #fff;
+    border-radius: 7px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .eggCirculo {
+    background-color: #ffd700;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Types Pokedex2 */
+  
+  .types {
+    background-color: #696969;
+    border-radius: 7px;
+    width: 70%;
+    height: 7%;
+  }

@@ -1,0 +1,13 @@
+<div class="principal">
+  @for (pokemon of listarPokemons.results; track $index) {
+    <div class="card" style="width: 17rem;">
+      <img class="card-img-top" [src]="getPokemonImageUrl(pokemon.url)" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{ pokemon.name[0].toUpperCase() + pokemon.name.substring(1) }}</h5>
+        <button class="btn btn-primary" (click)="irParaDetalhes(pokemon.url)">Detalhes</button>
+      </div>
+    </div>
+  }
+</div>
+
+<p-paginator (onPageChange)="onPageChange($event)" [first]="first" [rows]="rows" [totalRecords]="totalPokemons" ></p-paginator>

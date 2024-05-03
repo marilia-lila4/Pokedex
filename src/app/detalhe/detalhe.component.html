@@ -1,0 +1,66 @@
+<!-- <div class="row">
+    UniqPokemon 
+    id: {{uniqPokemon.id}}<br>
+    height: {{uniqPokemon.height}}<br>
+    weight: {{uniqPokemon.weight}}<br>
+    name: {{uniqPokemon.name}}<br><br><br><br>
+
+@for (ability of uniqPokemon.abilities; track $index) {
+Ability 
+    name: {{ability.ability.name}}
+}
+<br><br><br><br>
+
+@for (move of uniqPokemon.moves; track $index) {
+Move 
+    name: {{move.move.name}}
+}
+<br><br><br><br>
+
+@for (type of uniqPokemon.types; track $index) {
+Type 
+    name: {{type.type.name}}
+}
+</div> -->
+
+<div class="container">
+    <div class="section1">
+        <img class="card-img-top" src="{{imagem}}" alt="Card image cap">
+        <div class="textos">
+            <h6 class="list-group-item">Altura {{uniqPokemon.height}} cm</h6>
+            <h3 class="card-title">#{{uniqPokemon.id}} {{uniqPokemon.name[0].toUpperCase() + uniqPokemon.name.substring(1)}}</h3>
+            <h6 class="list-group-item">Largura {{uniqPokemon.weight}} cm</h6>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Abilities
+            </div>
+            @for (ability of uniqPokemon.abilities; track $index) {
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{ability.ability.name}}</li>
+            </ul>
+            }
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Types
+            </div>
+            @for (type of uniqPokemon.types; track $index) {
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{type.type.name}}</li>
+            </ul>
+            }
+        </div>
+      </div>
+    <div class="section3">
+      <!-- Bloco grande com nomes -->
+      <!-- Coloque seus nomes aqui -->
+    </div>
+    <div class="section4">
+      <!-- Rodapé com três imagens lado a lado -->
+      <!-- Coloque suas três imagens aqui -->
+    </div>
+</div>
